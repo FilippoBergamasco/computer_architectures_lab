@@ -2,6 +2,8 @@
 
 Simple programs demonstrating how variables are managed  in C and assembly.
 
+[Test it in the simulator](https://www.dais.unive.it/~bergamasco/A64Playground/#code=PTAEBUAsEsGdQA4CcD2BzJBDAtqWB3TBeAF0gFNQA3TAGwFdz4UAzUNWlAIzusyWiYutJgCgQoTJIB2AE1BcANKHqxo0tKCTk0cEuSTxMR2bOgloKab2zlsKJAE9xYfuWOgSKPF+2e7CA78jnwMTAB0oAAi0CwsBuTSJLTOEmSY0p4UoADCoOQAHjgIIspklDQCQiKgAMagcCrS0uS1TLDBoqKYskigBQAMylKgo2Pj4xKDoAC8oABkmN29-QCMylwTW5NgBauzC1xdtCv4AEzKANqDALrbExKcPVkVdIygrJKi9z-bEupeUDnY6nADMVz2d1+oEeKGe5VC70+R2hqJhYAB3nwoK6sBIfWxEIGUN+EjxDko2NAAAoETQwh82FwAJSgb5o0kYpLeSqCYSUKTUwIA8jyLjODmc-oDZm4-FAi6ga6rEk-Mm+SlnGl0t6UT6YVnsyV-LmA3nVSibIUoEViiXGk1rWVGrYuUAAIR06kZoFkmBIUlgrQsVlE4T9Ae6AC5QOF8A55KszqCBqIuDG4wnQABaVZAA)
+
 Run ```make``` to compile everything.
 
 ## Things to notice
