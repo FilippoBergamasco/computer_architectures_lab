@@ -1,7 +1,7 @@
 .global _start  // define a global symbol _start
 _start:         // program entry point
 
-    // This program swaps the value of global variables
+    // This program swaps the values of global variables
     // a and b, using registers as additional memory
     // areas to store temporary values. Differently
     // than the C example, the variable c is unnecessary
