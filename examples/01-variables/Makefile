@@ -66,11 +66,11 @@ variables_c: variables.c
 
 # Assembly program "variables"
 
-variables.o: variables.s
+variables.o: variables_stack.s #variables.s
 	#
 	######## Assemble ########
 	#
-	as variables.s -o variables.o
+	as $< -o variables.o
 	#
 	######## Dump object file's content ########
 	#
