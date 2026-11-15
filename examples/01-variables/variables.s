@@ -2,33 +2,22 @@
 _start:         // program entry point
 
     // This program swaps the value of global variables
-    // a and b, using the stack as an additional memory
-    // area. Since there are plenty of registers in the
-    // ARM64 architecture, we could have used a register
-    // instead of the stack. However, this program is similar
-    // to what a C compiler (with no optimizations) would 
-    // produce.
-
-    // see variables.c for reference
-    
+    // a and b, using registers as additional memory
+    // areas to store temporary values. Differently
+    // than the C example, the variable c is unnecessary
 
     adr x0, a               // x0 = &a
     adr x1, b               // x1 = &b
 
-
     ldr w2, [x0]            // load the value of a
                             // into w2
 
-    str w2, [SP, #-16]!     // push a into the stack
-    
-    ldr w2, [x1]            // load the value of b
-                            // into w2
+    ldr w3, [x1]            // load the value of b
+                            // into w3
 
-    str w2, [x0]            // store w2 (the value of b) 
+    str w3, [x0]            // store w3 (the value of b) 
                             // into variable a (pointed by
                             // x0)
-
-    ldr w2, [SP], #16       // pop a from the stack
 
     str w2, [x1]            // store w2 (the value of a) 
                             // into variable b (pointed by

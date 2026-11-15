@@ -47,7 +47,7 @@ variables_c: variables.c
 	#
 	######## Dump object file's content ########
 	#
-	objdump -d -s variables_c.o > variables_c.assembled.dump
+	objdump -d -r -s variables_c.o > variables_c.assembled.dump
 	readelf -a variables_c.o > variables_c.assembled.readelf.dump
 	#
 	######## Link ########
@@ -74,7 +74,7 @@ variables.o: variables.s
 	#
 	######## Dump object file's content ########
 	#
-	objdump -d -s variables.o > variables.assembled.dump
+	objdump -d -s -r variables.o > variables.assembled.dump
 	readelf -a variables.o > variables.assembled.readelf.dump
 
 
